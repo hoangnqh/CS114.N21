@@ -74,7 +74,7 @@ def get_data(url):
         "itemid": item_id,
         "shopid": shop_id,
         # limmit :chỉnh số lựong cmt muốn crawl về 
-        "limit": "50",
+        "limit": "59",
         "offset": "0",
         "relevant_reviews": "false",
         "request_source": "1",
