@@ -298,45 +298,7 @@ if uploaded_file is not None:
     df=pd.read_csv(uploaded_file)
 
     st.write("Coming soon")
-    # st.write("Dữ liệu bạn cung cấp")
-    # st.write(df)
 
-    # sinh_vien = pd.DataFrame(df.iloc[:, :2].copy())
-
-    # new_df = df.drop(df.columns[:2], axis=1)
-
-    # dtbhk_thu1 = []
-    # dtbhk_thu2 = []
-
-    # def remove_nan_none(arr):
-    #     arr = np.array(arr)
-    #     arr = arr[~np.isnan(arr)]
-    #     arr = arr[arr != None]
-    #     return arr.tolist()
-
-    # for index, row in new_df.iterrows():
-    #     arr = row.values
-    #     arr = arr.flatten()
-    #     arr = remove_nan_none(arr)
-    #     val1, val2 = predict(arr)
-    #     dtbhk_thu1.append(val1)
-    #     dtbhk_thu2.append(val2)
-        
-    # sinh_vien['dtbhk_thu'+str(num_sem+1)] = dtbhk_thu1
-    # if num_target == 2:
-    #     sinh_vien['dtbhk_thu'+str(num_sem+2)] = dtbhk_thu2
-    # st.write("Kết quả dự đoán")
-    # st.write(sinh_vien)
-    
-    # # Lưu DataFrame thành file CSV với mã hóa UTF-8 BOM
-    # filename = 'predicted_results.csv'
-    # with codecs.open(filename, 'w', 'utf-8-sig') as file:
-    #     sinh_vien.to_csv(file, index=False, sep=',', encoding='utf-8-sig')
-
-    # # Tạo nút tải xuống
-    # with open(filename, 'rb') as file:
-    #     csv = file.read()
-    # st.download_button('Tải file kết quả xuống', csv, file_name=filename, mime='text/csv')
 else:
     st.write("Định dạng file yêu cầu:")  
     st.write("<p style='font-size: 15px;'>- File ở định dạng .csv</p>", unsafe_allow_html=True)
